@@ -1,0 +1,25 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jusun.first.mappers.RoadMapper">
+    <select id="selectAll" resultType="com.jusun.first.domins.RoadDTO">
+    select
+    street_name streetName,
+    street_introduction streetIntroduction,
+    gun_length gunLength,
+    demand_time	demandTime,
+    starting_point_name startingPointName,
+    starting_point_address startingPointAddress,
+    starting_point_number_address startingPointNumberAddress,
+    end_point_name endPointName,
+    end_point_name_address endPointNameAddress,
+    end_point_number_address endPointnumberAddress,
+    phone_number phoneNumber,
+    management_agency_name managementAgencyName,
+    date baseDate,
+    latitude latitude,
+    longitude longitude,
+    provider_name providerName
+    from road
+    </select>
+</mapper>

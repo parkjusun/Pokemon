@@ -1,0 +1,20 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jusun.first.mappers.PokemonMapper">
+    <select id="selectAll" resultType="com.jusun.first.domins.PokemonDTO">
+    select
+    iname name,
+    stamina stamina,
+    atk atk,
+    def def,
+    capture_rate captureRate,
+    flee_rate fleeRate,
+    spawn_chance spawnChance,
+    prima prim,
+    secondary secondary,
+    cp cp,
+    url url
+    from  pokemongo
+    </select>
+</mapper>
